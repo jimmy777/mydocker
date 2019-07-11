@@ -10,9 +10,13 @@ https://hub.docker.com/_/tomcat
 https://hub.docker.com/_/mysql
 
 ```
+download
+# docker pull mysql:5.7
+
+run
 # docker run -d -P --name mysql -e MYSQL_ROOT_PASSWORD=abcd1234 mysql:5.7
 
-mysql client
+mysql-client 
 # docker run -it --name mysqlclient --link mysql:mysql mysql:5.7 bash
 
 ...# mysql -hmysql -uroot -pabcd1234
